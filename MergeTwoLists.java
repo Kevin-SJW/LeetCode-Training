@@ -8,10 +8,30 @@ package leetcode;
  */
 public class MergeTwoLists {
     public static void main(String[] args) {
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        ListNode lSum=mergeTwoList(l1,l2);
+        printList(lSum);
+    }
+
+    /**
+     * 打印链表
+     * @param head
+     * @return
+     */
+    public static void printList(ListNode head){
+        ListNode curNode= head;
+        //循环遍历到尾节点
+        while(curNode!=null){
+
+            System.out.print(curNode.val+" ");
+            curNode=curNode.next;
+        }
+        System.out.println();
 
     }
 
-    public ListNode mergeTwoList(ListNode one, ListNode two) {
+    public static  ListNode mergeTwoList(ListNode one, ListNode two) {
         ListNode list = new ListNode(-1);
         ListNode tmp = list;
         while (one != null && two != null) {
