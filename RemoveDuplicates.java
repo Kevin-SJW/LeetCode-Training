@@ -7,7 +7,9 @@ import java.util.Set;
 
 /**
  * @Classname RemoveDuplicates
- * @Description TODO
+ * @Description Given a sorted array nums, remove the duplicates
+ * in-place such that each element appear only once and return
+ * the new length.
  * @Date 2019/11/5 14:46
  * @Created by 14241
  */
@@ -26,7 +28,7 @@ public class RemoveDuplicates {
             if (nums[j] != nums[i]) {
                 i++;
                 nums[i] = nums[j];
-                
+
             }
         }
         return i + 1;
