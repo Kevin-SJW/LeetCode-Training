@@ -5,6 +5,9 @@ package leetcode;
  * @Description TODO
  * @Date 2020/1/27 15:50
  * @Created by 14241
+ * 题意及分析：给出一个链表和一个值x，将链表中值小于x的点移动到值大于等于x的点之前，
+ * 分别需要保持保持两部分中点的相对位置不变。可以分别得到大于等于x的链表和小于x的链表，
+ * 然后把两个链表组合起来就是需要的结果。
  */
 public class PartitionList {
     public static void main(String[] args) {
