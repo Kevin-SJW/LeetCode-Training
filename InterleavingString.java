@@ -5,6 +5,12 @@ package leetcode;
  * @Description TODO
  * @Date 2020/2/7 15:27
  * @Created by 14241
+ * 分析：这道题，我觉得是比较难的。我最开始的想法是使用递归，但是觉得递归可能会超时，就利用两个指针吗，
+ * 齐头并进，当遇到二者相等时，就把中间状态存到栈里面。如果以后走不通了，就出栈，恢复状态。再继续查找，恢复等等，
+ * 当数据小规模时，可以work，但是数据量一大就TLE。
+ * 于是使用二维DP算法（早该想到）。其核心的状态转移方程为：
+ * f(i,j) = s1[i-1][j]==s3[i+j-1] && f[i-1,j] || (s2[i][j-1]==s3[i+j-1] && f[i][j-1])
+
  */
 public class InterleavingString {
     public static void main(String[] args) {
