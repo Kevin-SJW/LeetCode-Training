@@ -22,8 +22,8 @@ public class BinaryTreeZigzagLevelOrderTraversal {
         node.add(7, root);
         List<List<Integer>> res = zigzagLevelOrder(root);
         for (List<Integer> re : res) {
-            for (int num : re) {
-                System.out.print(num + " ");
+            for (int nu : re) {
+                System.out.print(nu + " ");
             }
         }
 
