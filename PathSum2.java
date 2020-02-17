@@ -25,8 +25,8 @@ public class PathSum2 {
         int sum=30;
         List<List<Integer>> res=pathSum(root,sum);
         for(List<Integer> nums:res){
-            for(int nu:nums){
-                System.out.print(nu+" ");
+            for(int num:nums){
+                System.out.print(num+" ");
             }
         }
 
