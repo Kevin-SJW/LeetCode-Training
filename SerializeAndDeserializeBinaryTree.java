@@ -13,7 +13,7 @@ public class SerializeAndDeserializeBinaryTree {
     //Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if (root == null){
-            return " ";
+            return "";
         }
         StringBuilder sb = new StringBuilder();
         Queue<TreeNode> queue = new LinkedList<>();
