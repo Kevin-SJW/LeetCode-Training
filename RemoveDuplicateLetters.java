@@ -26,6 +26,7 @@ public class RemoveDuplicateLetters {
             if (stack.contains(c)) {
                 continue;
             }
+            //遇到一个新字符 如果比栈顶小 并且在新字符后面还有和栈顶一样的 就把栈顶的字符抛弃了
             while (!stack.isEmpty() && stack.peek() > c && s.indexOf(stack.peek(), i) != -1) {
                 stack.pop();
             }
